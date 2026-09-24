@@ -85,7 +85,7 @@ pip install transformers torch pandas
 From the repository root:
 
 ```powershell
-python pumps_model_3.py
+python pumps_model_AI.py
 ```
 
 ## Important note about the CSV path
@@ -96,17 +96,6 @@ The script currently contains a hardcoded filename:
 CSV_FILE = "water_pumps.csv"
 ```
 
-At the moment, the project folder contains `pumps_raw_crop.csv`, so you will need to either:
-
-- rename the file to `water_pumps.csv`, or
-- update the value in `pumps_model_3.py` to match your actual file name
-
-Example:
-
-```python
-CSV_FILE = "pumps_raw_crop.csv"
-```
-
 ## Example output
 
 The script appends a generated text field to the dataframe, such as:
@@ -115,9 +104,11 @@ The script appends a generated text field to the dataframe, such as:
 extracted_info
 ```
 
-This field may contain a model-generated summary like:
+This field may contain a model-generated summary like: (specifying what the summary covers can be modified in the python script manually
 
 > This pump is likely used for water transfer and drainage operations in the region, with a typical capacity in the moderate municipal or industrial range. It is likely located in Zuid-Holland and associated with local water management infrastructure.
+
+
 
 ## Limitations
 
